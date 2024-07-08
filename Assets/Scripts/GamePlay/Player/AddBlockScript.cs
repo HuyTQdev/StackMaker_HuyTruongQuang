@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,21 @@ public class AddBlockScript : Singleton<AddBlockScript>
     [SerializeField] Vector3 blockDistance;
     [SerializeField] Animator animator;
     GameObject go;
+    private void OnEnable()
+    {
+        EventManager.Instance.StartListening("WinGame", WinGame);
+    }
+    private void OnDisable()
+    {
+        EventManager.Instance.StopListening("WinGame", WinGame);
+    }
+
+    private void WinGame(object[] parameters)
+    {
+        ResetBlocks();
+        if (animator.GetInteger("renwu") != 2) animator.SetInteger("renwu", 2);
+    }
+
     private void Start()
     {
         curNumBlock = 1;
@@ -34,5 +50,14 @@ public class AddBlockScript : Singleton<AddBlockScript>
         go.SetActive(false);
         playerRenderer.position -= blockDistance;
         curNumBlock -= 1;
+    }
+    public void ResetBlocks()
+    {
+        while (blocks.Count > 0)
+        {
+            blocks.Peek().SetActive(false);
+            blocks.Pop();
+        }
+        playerRenderer.position = firstBlock.transform.position;
     }
 }

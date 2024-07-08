@@ -12,15 +12,14 @@ class MapGenerator: Singleton<MapGenerator>
     [SerializeField] Vector2 baseBlock;
     [SerializeField] DataLevel[] levels;
     [SerializeField] Transform player;
-    [SerializeField] Transform winPos;
     public Vector3 playerPos;
     List<List<int>> matrix;
     Vector3 tmpPos;
+    public int curMap;
 
     public void StartGenerate()
     {
-        int curMap = 0;
-        matrix = CSVReader.LoadCSV(levels[curMap].pathMap, levels[curMap].mapSize);
+        matrix = CSVReader.LoadCSV(levels[curMap].pathMap);
         for (int i = 0; i < matrix.Count; i++)
         {
             for(int j = 0; j < matrix[i].Count; j++)
@@ -39,9 +38,6 @@ class MapGenerator: Singleton<MapGenerator>
                 }
             }
         }
-        tmpPos = Vector3.forward * baseBlock.y * levels[curMap].winPos.y
-            + Vector3.left * baseBlock.x * levels[curMap].winPos.x + 3.5f * Vector3.up;
-        winPos.position = tmpPos;
         for (int i = 0; i < levels[curMap].gemPos.Length; i++)
         {
             tmpPos = Vector3.forward * baseBlock.y * levels[curMap].gemPos[i].y

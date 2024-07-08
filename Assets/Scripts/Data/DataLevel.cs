@@ -7,7 +7,5 @@ public class DataLevel:ScriptableObject
 {
     public string pathMap;
     public Vector2[] gemPos;
-    public Vector2 winPos;
-    public int mapSize;
 
 }
