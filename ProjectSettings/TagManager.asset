@@ -8,7 +8,8 @@ TagManager:
   - Wall
   - BuildableBrick
   - Gem
-  - EndPos
+  - WinPos
+  - Chest
   layers:
   - Default
   - TransparentFX

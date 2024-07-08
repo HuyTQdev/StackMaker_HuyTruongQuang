@@ -16,5 +16,10 @@ MonoBehaviour:
   gemPos:
   - {x: 21, y: 10}
   - {x: 14, y: 17}
-  winPos: {x: 30, y: 2}
-  mapSize: 30
+  gems:
+  - position: {x: 21, y: 10}
+    value: 150
+    isBonus: 0
+  - position: {x: 14, y: 17}
+    value: 150
+    isBonus: 1

@@ -10,8 +10,7 @@ public class PlayerCollider : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Gem"))
         {
-            EventManager.Instance.TriggerEvent("AddGem", 150);
-            collision.gameObject.SetActive(false);
+            collision.GetComponent<GemScript>().GetGem();
         } else if (collision.gameObject.CompareTag("WinPos"))
         {
             EventManager.Instance.TriggerEvent("WinGame");

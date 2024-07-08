@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   pathMap: Data/CSV_Map/Map_2.csv
-  gemPos: []
-  mapSize: 40
+  gems:
+  - position: {x: 1, y: 14}
+    value: 300
+    isBonus: 0
+  - position: {x: 52, y: 8}
+    value: 260
+    isBonus: 1

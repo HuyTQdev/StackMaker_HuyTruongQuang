@@ -16,10 +16,17 @@ public class AddBlockScript : Singleton<AddBlockScript>
     private void OnEnable()
     {
         EventManager.Instance.StartListening("WinGame", WinGame);
+        EventManager.Instance.StartListening("AddBlock", Add);
     }
+
+
     private void OnDisable()
     {
-        EventManager.Instance.StopListening("WinGame", WinGame);
+        if (!EventManager.CheckNull())
+        {
+            EventManager.Instance.StopListening("WinGame", WinGame);
+            EventManager.Instance.StopListening("AddBlock", Add);
+        }
     }
 
     private void WinGame(object[] parameters)
@@ -35,7 +42,7 @@ public class AddBlockScript : Singleton<AddBlockScript>
         blocks.Push(firstBlock.gameObject);
     }
 
-    public void Add()
+    public void Add(object[] parameters)
     {
         if(animator.GetInteger("renwu") != 1)animator.SetInteger("renwu", 1);
         blocks.Push(ObjectPool.instance.GetObject("StackableBrick", firstBlock.transform.position + blockDistance * curNumBlock));

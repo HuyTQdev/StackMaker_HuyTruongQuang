@@ -5,7 +5,7 @@ using System.IO;
 public class CSVReader : MonoBehaviour
 {
     public string filePath = "Data/Map/Map_1.csv"; // Path to the CSV file
-
+/*
     void Start()
     {
         List<List<int>> matrix = LoadCSV(filePath);
@@ -14,7 +14,7 @@ public class CSVReader : MonoBehaviour
         {
             Debug.Log(string.Join(", ", row));
         }
-    }
+    }*/
 
     public static List<List<int>> LoadCSV(string relativePath)
     {

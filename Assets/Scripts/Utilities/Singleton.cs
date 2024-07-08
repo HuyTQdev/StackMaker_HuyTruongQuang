@@ -33,4 +33,8 @@ public abstract class Singleton<TMono> : MonoBehaviour where TMono : MonoBehavio
         Destroy(gameObject);
     }
 
+    public static bool CheckNull()
+    {
+        return _instance == null;
+    }
 }

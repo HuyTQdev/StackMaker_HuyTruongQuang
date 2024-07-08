@@ -25,9 +25,12 @@ public class PlayerMoving : MonoBehaviour
     }
     private void OnDisable()
     {
-        EventManager.Instance.StopListening("StopMoving", StopMoving);
-        EventManager.Instance.StopListening("Move", Move);
-        EventManager.Instance.StopListening("Bounce", Bounce);
+        if (!EventManager.CheckNull())
+        {
+            EventManager.Instance.StopListening("StopMoving", StopMoving);
+            EventManager.Instance.StopListening("Move", Move);
+            EventManager.Instance.StopListening("Bounce", Bounce);
+        }
     }
 
     private void Bounce(object[] parameters)
@@ -90,7 +93,6 @@ public class PlayerMoving : MonoBehaviour
         if (animator.GetInteger("renwu") != 0)
         {
             animator.SetInteger("renwu", 0);
-            Debug.Log("Idle");
         }
         rb.velocity = Vector3.zero;
         //rc.enabled = false;

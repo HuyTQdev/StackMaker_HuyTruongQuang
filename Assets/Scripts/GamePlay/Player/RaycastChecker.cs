@@ -44,7 +44,7 @@ public class RaycastChecker : MonoBehaviour
             if(hit.collider.CompareTag("EatableBrick"))
             {
                 hit.collider.gameObject.SetActive(false);
-                addBlockScript.Add();
+                EventManager.Instance.TriggerEvent("AddBlock");
                 return true;
             }
             else if (hit.collider.CompareTag("Wall"))

@@ -7,7 +7,8 @@ public class ResetPrefabs : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        PlayerPrefs.SetInt("point", 0);
+        PlayerPrefs.SetInt("CurGem", 0);
+        PlayerPrefs.SetInt("CurLevel", 0);
     }
 
 }

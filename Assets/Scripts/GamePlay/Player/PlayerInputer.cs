@@ -23,7 +23,8 @@ public class PlayerInputer : MonoBehaviour
     }
     private void OnDisable()
     {
-        EventManager.Instance.StopListening("StopMoving", ResetListener);
+        if (!EventManager.CheckNull())
+            EventManager.Instance.StopListening("StopMoving", ResetListener);
     }
 
     private void ResetListener(object[] parameters)

@@ -7738,7 +7738,6 @@ GameObject:
   - component: {fileID: 7883596607045255318}
   - component: {fileID: 7854523855000214075}
   - component: {fileID: 7866625480397130154}
-  - component: {fileID: 5904385866773668945}
   m_Layer: 0
   m_Name: default
   m_TagString: Gem
@@ -7809,19 +7808,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5904385866773668945
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7889665412012700532}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 11.006139, y: 10.524301, z: 12.708765}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7889699415474103284
 GameObject:
   m_ObjectHideFlags: 0
@@ -7868,6 +7854,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7887632924275949754}
   - component: {fileID: 7850756126598772404}
+  - component: {fileID: 3047081921291551252}
+  - component: {fileID: 3112057421329049727}
   m_Layer: 0
   m_Name: zuanshi
   m_TagString: Gem
@@ -7900,10 +7888,35 @@ Animation:
   m_GameObject: {fileID: 7889889730783503976}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: 83bf37b2d68073d40864a30b013e2557, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 83bf37b2d68073d40864a30b013e2557, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &3047081921291551252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889889730783503976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0936143a856e9d94e9e7b1c8fe319853, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &3112057421329049727
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7889889730783503976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.006139, y: 10.524301, z: 12.708765}
+  m_Center: {x: 0, y: 0, z: 0}

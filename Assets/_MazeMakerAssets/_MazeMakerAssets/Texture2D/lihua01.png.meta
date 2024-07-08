@@ -1,12 +1,84 @@
 fileFormatVersion: 2
 guid: 60c80835e85a5be4cbfbbf2f139bc1e0
-timeCreated: 1645088421
-licenseType: Free
 TextureImporter:
-  internalIDToNameTable: {}
+  internalIDToNameTable:
+  - first:
+      213: 5404970102156587981
+    second: lihua01_0
+  - first:
+      213: -9199746304265115542
+    second: lihua01_1
+  - first:
+      213: -3613851009640141667
+    second: lihua01_2
+  - first:
+      213: -9176295013398610445
+    second: lihua01_3
+  - first:
+      213: 3467629768601507912
+    second: lihua01_4
+  - first:
+      213: -1165632049636769227
+    second: lihua01_5
+  - first:
+      213: 8731412020097304908
+    second: lihua01_6
+  - first:
+      213: -681885541313246246
+    second: lihua01_7
+  - first:
+      213: -6281462062607952063
+    second: lihua01_8
+  - first:
+      213: -1461131456895998214
+    second: lihua01_9
+  - first:
+      213: -4767333404991260459
+    second: lihua01_10
+  - first:
+      213: -6999982216383424625
+    second: lihua01_11
+  - first:
+      213: 5108124335711998039
+    second: lihua01_12
+  - first:
+      213: -3714183920734268173
+    second: lihua01_13
+  - first:
+      213: -4665719020191138687
+    second: lihua01_14
+  - first:
+      213: -7328811197854544239
+    second: lihua01_15
+  - first:
+      213: -1028113897611796566
+    second: lihua01_16
+  - first:
+      213: 2346102657050885345
+    second: lihua01_17
+  - first:
+      213: 3686233435476475729
+    second: lihua01_18
+  - first:
+      213: 5800431943756643422
+    second: lihua01_19
+  - first:
+      213: 3663464048305322776
+    second: lihua01_20
+  - first:
+      213: -3122647951883260482
+    second: lihua01_21
+  - first:
+      213: -8663944806133710406
+    second: lihua01_22
+  - first:
+      213: -4629100993182067572
+    second: lihua01_23
+  - first:
+      213: -4110680050567536583
+    second: lihua01_24
   externalObjects: {}
-  usedFileIDs: []
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -26,6 +98,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -37,13 +110,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
+    wrapU: 0
+    wrapV: 0
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,12 +127,17 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -73,22 +151,571 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: lihua01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 447
+        width: 98
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc376a0dbaf420b40800000000000000
+      internalID: 5404970102156587981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 436
+        width: 97
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68a0968a7fe35080800000000000000
+      internalID: -9199746304265115542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 427
+        width: 95
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c663b57a509ddc0800000000000000
+      internalID: -3613851009640141667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 422
+        width: 92
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdff2cad4047a080800000000000000
+      internalID: -9176295013398610445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_4
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 420
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848101af6ee7f1030800000000000000
+      internalID: 3467629768601507912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 319
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532079e93d7d2dfe0800000000000000
+      internalID: -1165632049636769227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 320
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49c975a8f43c2970800000000000000
+      internalID: 8731412020097304908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_7
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 320
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb8c8486b47986f0800000000000000
+      internalID: -681885541313246246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 324
+        width: 83
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1471920e883c3d8a0800000000000000
+      internalID: -6281462062607952063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 328
+        width: 88
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6a09d6ea409bbe0800000000000000
+      internalID: -1461131456895998214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 231
+        width: 93
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d874adc68707ddb0800000000000000
+      internalID: -4767333404991260459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_11
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 237
+        width: 96
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f871a6ef2411bde90800000000000000
+      internalID: -6999982216383424625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 244
+        width: 98
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75054a2f404b3e640800000000000000
+      internalID: 5108124335711998039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_13
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 237
+        width: 98
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f49a261761947cc0800000000000000
+      internalID: -3714183920734268173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_14
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 228
+        width: 97
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c39bb6549004fb0800000000000000
+      internalID: -4665719020191138687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 120
+        width: 94
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e89f59b05da4a90800000000000000
+      internalID: -7328811197854544239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 116
+        width: 89
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafd4387bd76bb1f0800000000000000
+      internalID: -1028113897611796566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 115
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec3e18bfe70f8020800000000000000
+      internalID: 2346102657050885345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_18
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 113
+        width: 82
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f3eb077c1282330800000000000000
+      internalID: 3686233435476475729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_19
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 112
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c717fee164f7050800000000000000
+      internalID: 5800431943756643422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 13
+        width: 83
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b37ae542d37d230800000000000000
+      internalID: 3663464048305322776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_21
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 16
+        width: 87
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebda5657b302aa4d0800000000000000
+      internalID: -3122647951883260482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 22
+        width: 91
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab14fc43a1c73c780800000000000000
+      internalID: -8663944806133710406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_23
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 29
+        width: 95
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8499f73c2122cfb0800000000000000
+      internalID: -4629100993182067572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lihua01_24
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 36
+        width: 97
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93023a8f54ee3f6c0800000000000000
+      internalID: -4110680050567536583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID:
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
