@@ -6,11 +6,11 @@ using UnityEngine;
 public class BuildBridgeScript : MonoBehaviour
 {
     [SerializeField] MeshRenderer mesh;
-    [SerializeField] BoxCollider collider;
+    [SerializeField] BoxCollider boxCollider;
     static Vector3 savePos;
     public void Build()
     {
-        collider.enabled = false;
+        boxCollider.enabled = false;
         mesh.enabled = true;
     }
 

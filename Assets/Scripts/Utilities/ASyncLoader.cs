@@ -22,6 +22,7 @@ public class ASyncLoader : MonoBehaviour
         while (!loadOperation.isDone)
         {
             fill.fillAmount = loadOperation.progress;
+            text.text = (int)(loadOperation.progress * 100) + "%";
             yield return null;
         }
         yield return new WaitForSeconds(.2f);

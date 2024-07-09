@@ -14,9 +14,9 @@ public class DataLevel : ScriptableObject
         [SerializeField] private bool isBonus;
 
         // Optionally, you can add properties to access these fields
-        public Vector2 Position { get => position; set => position = value; }
-        public int Value { get => value; set => value = value; }
-        public bool IsBonus { get => isBonus; set => isBonus = value; }
+        public Vector2 Position { get => position; set => this.position = Position; }
+        public int Value { get => value; set => this.value = value; }
+        public bool IsBonus { get => isBonus; set => this.isBonus = IsBonus; }
     }
 
     public string pathMap;

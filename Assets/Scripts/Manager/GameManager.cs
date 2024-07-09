@@ -37,7 +37,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
-        MapGenerator.Instance.StartGenerate();
+        //MapGenerator.Instance.StartGenerate();
         //UIManager.Ins.OpenUI<UIMainMenu>();
     }
 }

@@ -113,7 +113,7 @@ namespace UI
                     ans = 10;
                     break;
                 case 7:
-                    ans = Random.RandomRange(1, 20) * .5f;
+                    ans = Random.Range(1, 20) * .5f;
                     break;
                 case 8:
                     ans = 1.5f;
