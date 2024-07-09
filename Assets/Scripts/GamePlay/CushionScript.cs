@@ -12,7 +12,6 @@ public class CushionScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("BOUNCE");
         if (other.gameObject.CompareTag("Player"))
         {
             EventManager.Instance.TriggerEvent("Bounce", this);

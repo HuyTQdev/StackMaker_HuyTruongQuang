@@ -20,16 +20,24 @@ public class PlayerInputer : MonoBehaviour
     private void OnEnable()
     {
         EventManager.Instance.StartListening("StopMoving", ResetListener);
+        EventManager.Instance.StartListening("Move", StopListener);
     }
     private void OnDisable()
     {
         if (!EventManager.CheckNull())
+        {
             EventManager.Instance.StopListening("StopMoving", ResetListener);
-    }
+            EventManager.Instance.StopListening("Move", StopListener);
+        }
+        }
 
     private void ResetListener(object[] parameters)
     {
         isMoving = false;
+    }
+    private void StopListener(object[] parameters)
+    {
+        isMoving = true;
     }
     public void GetEndPosition()
     {
@@ -40,12 +48,10 @@ public class PlayerInputer : MonoBehaviour
         {
             if(direction.x > 0)
             {
-                isMoving = true;
                 EventManager.Instance.TriggerEvent("Move", PlayerDirection.RIGHT); 
             }
             else
             {
-                isMoving = true;
                 EventManager.Instance.TriggerEvent("Move", PlayerDirection.LEFT);
             }
         }

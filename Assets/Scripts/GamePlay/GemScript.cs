@@ -7,6 +7,13 @@ public class GemScript : MonoBehaviour
     int value;
     bool isBonus;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            GetGem();
+        }
+    }
     public void Init(int value, bool isBonus)
     {
         this.value = value;

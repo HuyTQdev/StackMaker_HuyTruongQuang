@@ -35,29 +35,6 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    private void OnEnable()
-    {
-        EventManager.Instance.StartListening("WinGame", WinGame);
-    }
-    private void OnDisable()
-    {
-        if (!EventManager.CheckNull())
-            EventManager.Instance.StopListening("WinGame", WinGame);
-    }
-
-    private void WinGame(object[] parameters)
-    {
-        StartCoroutine(WinGame());
-    }
-
-    IEnumerator WinGame()
-    {
-        // Wait for 1 second
-        yield return new WaitForSeconds(1f);
-
-        // Then activate the win game canvas
-        winGameCanvas.SetActive(true);
-    }
     private void Start()
     {
         MapGenerator.Instance.StartGenerate();

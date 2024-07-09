@@ -15,7 +15,7 @@ public class AddBlockScript : Singleton<AddBlockScript>
     GameObject go;
     private void OnEnable()
     {
-        EventManager.Instance.StartListening("WinGame", WinGame);
+        EventManager.Instance.StartListening("ResetBlock", WinGame);
         EventManager.Instance.StartListening("AddBlock", Add);
     }
 
@@ -24,7 +24,7 @@ public class AddBlockScript : Singleton<AddBlockScript>
     {
         if (!EventManager.CheckNull())
         {
-            EventManager.Instance.StopListening("WinGame", WinGame);
+            EventManager.Instance.StopListening("ResetBlock", WinGame);
             EventManager.Instance.StopListening("AddBlock", Add);
         }
     }

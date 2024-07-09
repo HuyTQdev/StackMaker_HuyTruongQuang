@@ -19,11 +19,13 @@ namespace UI
         [SerializeField] TextMeshProUGUI valueText;
         [SerializeField] int value;
         [SerializeField] Animator animator;
+        [SerializeField] Button button;
         int targetValue;
         bool isRolling;
         public void OpenBonus(int gemVal)
         {
             value = gemVal;
+            button.enabled = true;
             animator.updateMode = AnimatorUpdateMode.UnscaledTime;
             animator.SetTrigger("open");
             isRolling = false;
@@ -75,6 +77,7 @@ namespace UI
         }
         public void OnRoll()
         {
+            button.enabled = false;
             if (isRolling) return;
             clickImage.sprite = graySprite;
             int p = Random.Range(10, 30);

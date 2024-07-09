@@ -2795,7 +2795,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b569b157bf07ec140a83de7631590e27, type: 2}
-  - {fileID: 2100000, guid: b569b157bf07ec140a83de7631590e27, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6069,7 +6068,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095323009806971}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.2845403, y: 0.9482997, z: 0.8538684}
@@ -10492,7 +10491,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b569b157bf07ec140a83de7631590e27, type: 2}
   - {fileID: 2100000, guid: b569b157bf07ec140a83de7631590e27, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -19216,7 +19214,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: aa671fec747934442983036580cf1dcf, type: 2}
-  - {fileID: 2100000, guid: aa671fec747934442983036580cf1dcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22014,7 +22011,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 50dfb117c00bf7240a5a6beb449cb876, type: 2}
-  - {fileID: 2100000, guid: 50dfb117c00bf7240a5a6beb449cb876, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22232,6 +22228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4157892317022374}
   - component: {fileID: 1538356266}
+  - component: {fileID: 8773759762125085564}
   m_Layer: 0
   m_Name: winpos
   m_TagString: WinPos
@@ -22333,6 +22330,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7, y: 1, z: 1}
   m_Center: {x: 0, y: 3, z: 4}
+--- !u!114 &8773759762125085564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377060364527856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfbee7ddb075fe498a2b8ca2b08de6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1: {fileID: 198723746604263940}
+  p2: {fileID: 198957174810120253}
+  openedChest: {fileID: 1502762753808250}
+  closedChest: {fileID: 1095323009806971}
 --- !u!1 &1382597685722805
 GameObject:
   m_ObjectHideFlags: 0
@@ -26055,6 +26068,7 @@ GameObject:
   - component: {fileID: 4127882339869582}
   - component: {fileID: 33606421805614197}
   - component: {fileID: 23514134823232109}
+  - component: {fileID: 2787061326942302911}
   m_Layer: 0
   m_Name: baoxiang_open
   m_TagString: Untagged
@@ -26126,6 +26140,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2787061326942302911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502762753808250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2845403, y: 1.1519184, z: 1.1764021}
+  m_Center: {x: 0.0068756077, y: 0.14456211, z: 0.58820087}
 --- !u!1 &1505682276471674
 GameObject:
   m_ObjectHideFlags: 0
@@ -28840,7 +28867,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa671fec747934442983036580cf1dcf, type: 2}
   - {fileID: 2100000, guid: aa671fec747934442983036580cf1dcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -45157,7 +45183,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 50dfb117c00bf7240a5a6beb449cb876, type: 2}
   - {fileID: 2100000, guid: 50dfb117c00bf7240a5a6beb449cb876, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

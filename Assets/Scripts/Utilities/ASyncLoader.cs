@@ -1,27 +1,30 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ASyncLoader : MonoBehaviour
 {
-    [SerializeField] string scene;
-    [SerializeField] Image fill;
+    [SerializeField] private string scene;
+    [SerializeField] private Image fill;
+    [SerializeField] TextMeshProUGUI text;
+
     private void Start()
     {
         StartCoroutine(LoadLevelAsync(scene));
     }
 
-    public IEnumerator LoadLevelAsync(string leveltoLoad)
+    private IEnumerator LoadLevelAsync(string levelToLoad)
     {
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(leveltoLoad);
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
 
         while (!loadOperation.isDone)
         {
-            float progressValue = Mathf.Clamp01(loadOperation.progress / .9f);
-            fill.fillAmount = progressValue;
+            fill.fillAmount = loadOperation.progress;
             yield return null;
         }
+        yield return new WaitForSeconds(.2f);
+
     }
 }
