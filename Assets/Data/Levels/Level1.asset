@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649bb8615050bdf43bc3c6f656450393, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  pathMap: Data/CSV_Map/Map_1.csv
-  gemPos:
-  - {x: 21, y: 10}
-  - {x: 14, y: 17}
+  pathMap: CSV_Map/Map_1.csv
   gems:
   - position: {x: 21, y: 10}
     value: 150
