@@ -7,10 +7,6 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField]private Vector3 offset;
     [SerializeField]private float speed;
-    private void Awake()
-    {
-        offset = transform.position - target.position;
-    }
     // Update is called once per frame
     void FixedUpdate()
     {

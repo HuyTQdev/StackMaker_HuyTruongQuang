@@ -200,4 +200,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 1317233793615048143}
-  collider: {fileID: 5937217605000111197}
+  boxCollider: {fileID: 5937217605000111197}

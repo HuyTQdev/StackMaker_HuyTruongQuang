@@ -162,6 +162,22 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 23359260050137393, guid: d04d393ce76715f498cdd8615b8940a4, type: 3}
   m_PrefabInstance: {fileID: 1306924288451073512}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &6478422575127911552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306187787937406283}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!65 &4117170407956050917
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -188,20 +204,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 1329087081979704537}
-  collider: {fileID: 4117170407956050917}
---- !u!54 &6478422575127911552
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306187787937406283}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 2
+  boxCollider: {fileID: 4117170407956050917}

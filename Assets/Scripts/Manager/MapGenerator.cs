@@ -17,10 +17,10 @@ class MapGenerator: Singleton<MapGenerator>
     Vector3 tmpPos;
     public int curMap;
 
-    private void Start()
+    /*private void Start()
     {
         StartGenerate();
-    }
+    }*/
     public void StartGenerate()
     {
         if (PlayerPrefs.HasKey("CurLevel"))
